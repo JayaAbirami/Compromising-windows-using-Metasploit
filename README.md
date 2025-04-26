@@ -48,7 +48,8 @@ migrate -N explorer.exe at meterpreter > prompt, execute this command: netstat A
 ![image](https://github.com/user-attachments/assets/d53176fa-7af0-4f05-b526-91713074335d)
 
 Post Exploitation: The target is now owned. Following are meterpreter commands for key capturing in the target machine keyscan_start Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name.
-keyscan_dump Shows the keystrokes captured so far 
+keyscan_dump Shows the keystrokes captured so far
+
 ![image](https://github.com/user-attachments/assets/ec7c391d-62a6-4fdc-a2c3-ef383b6c8a57)
 
 
