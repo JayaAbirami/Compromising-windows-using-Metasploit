@@ -41,13 +41,15 @@ To see a list of processes, at the meterpreter > prompt, execute this command: p
 
 The Metasploit shell is running inside the "fun.exe" process. If the user closes that process, or logs off, the connection will be lost. To become more persistent, we'll migrate to a process that will last longer. Let's migrate to the winlogon process. At the meterpreter > prompt, execute this command:
 
+![image](https://github.com/user-attachments/assets/596d3916-66f9-4605-8ae4-5dd21116b77a)
 
 migrate -N explorer.exe at meterpreter > prompt, execute this command: netstat A list of network connections appears, including one to a remote port of 4444, as highlighted in the image below. Notice the "PID/Program name" value for this connection, which is redacted
 
+![image](https://github.com/user-attachments/assets/d53176fa-7af0-4f05-b526-91713074335d)
 
 Post Exploitation: The target is now owned. Following are meterpreter commands for key capturing in the target machine keyscan_start Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name.
-
 keyscan_dump Shows the keystrokes captured so far 
+![image](https://github.com/user-attachments/assets/ec7c391d-62a6-4fdc-a2c3-ef383b6c8a57)
 
 
 ## RESULT:
